@@ -4,11 +4,13 @@ pipeline{
         stage('Doker'){
             steps{
                 echo "Doker"
+                sh trigger
             }
         }
             stage("Maven"){
                 steps{
                     echo "Maven"
+                    sh target-agent
                 }
             }    
             
