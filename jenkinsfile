@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+    stages{
+        stage('Doker'){
+            steps{
+                echo "Doker"
+            }
+        }
+            stage("Maven"){
+                steps{
+                    echo "Maven"
+                }
+            }    
+            
+        
+    }
+        
+    }
+
+
+       
+       
+        
+    
