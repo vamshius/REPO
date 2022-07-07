@@ -4,13 +4,13 @@ pipeline{
         stage('Doker'){
             steps{
                 echo "Doker"
-                sh testing
+                sh origin
             }
         }
             stage("Maven"){
                 steps{
                     echo "Maven"
-                    sh coding
+                    sh master
                 }
             }    
             
