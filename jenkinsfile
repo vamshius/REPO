@@ -13,10 +13,10 @@ pipeline{
                     
                 }
             }
-            stage("jdk"){
+            stage("gradle"){
             steps{
             
-        xunit checksName: '', tools: []
+        xunit checksName: '', tools: ["gradle"]
     }
         
     }
