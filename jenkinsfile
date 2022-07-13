@@ -13,10 +13,10 @@ pipeline{
                     
                 }
             }
-            stage("gradle"){
+            stage("cobertura"){
             steps{
             
-        xunit checksName: '', tools: ["gradle"]
+        echo "cobertura"
     }
         
     }
