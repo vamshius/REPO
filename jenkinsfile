@@ -12,11 +12,15 @@ pipeline{
                     echo "Maven"
                     
                 }
-            }    
+            }
+            stage("jdk"){
+            steps{
             
-        
+        xunit checksName: '', tools: []
     }
         
+    }
+    }
     }
 
 
